@@ -3,5 +3,5 @@ EXPOSE 3001
 RUN mkdir -p .
 ADD node_modules.tar.gz .
 COPY . .
-WORKDIR .
+WORKDIR /todo-app/front-end
 CMD ["npm", "start"]
